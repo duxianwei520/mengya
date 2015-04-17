@@ -1,0 +1,372 @@
+/* 2015-03-30 created by vigoss  QQ: 631827052; */
+
+/* reset */
+.clearfix:after {clear:both; content:"."; display:block; height:0; line-height:0; font-size:0;  visibility:hidden; }
+.clearfix { *zoom:1; }
+.list-block{margin:20px 0;}
+i.icon.icon-back{background: transparent url(../img/icon-back.png) no-repeat 0 0 ; width: 12px; height: 22px;}
+i.icon.icon-ok{background: transparent url(../img/icon-ok.png) no-repeat 0 0 ; width: 24px; height: 17px; background-size: 24px auto;}
+i.icon.icon-set{background: transparent url(../img/icon-set.png) no-repeat 0 0 ; width: 25px; height: 25px; background-size: 25px auto;}
+i.icon.icon-star{background: transparent url(../img/icon-star.png) no-repeat 0 0 ; width: 16px; height: 16px; background-size: 16px auto;}
+
+.tabs-animated-wrap{height: auto;}
+.bg-red, .button.button-fill.bg-red, .list-block .swipeout-actions-left a.bg-red, .list-block .swipeout-actions-right a.bg-red, a.bg-red{ background-color: #e84c3d;}
+.pink{ color: #e7578e;}
+.blue{ color: #b66afb;}
+.bg-pink{ background-color: #fa82a8;}
+
+
+/* 底部导航 */
+.tabbar a.tab-link1{
+	height: 100%;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	overflow: visible;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+.tabbar-labels a.tab-link1{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	height: 100%;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.tabbar-labels a.tab-link1 i + span{margin: 0;}
+.tabbar-labels .toolbar-inner span.tabbar-label{margin-top: 0px;}
+.tabbar-labels span.tabbar-label {line-height: 1;display: block;margin: 0;letter-spacing: 0.01em;font-size: 10px;position: relative;text-overflow: ellipsis;white-space: nowrap;}
+
+/* footer */
+.tabbar-labels{}
+.icon .badge{ width: 10px; height: 10px; top: -1px; margin-left: -3px;}
+.tabbar .active .tabbar-label{color: #e7578e;} 
+.tabbar i.icon{ width: 25px; height: 25px; background-size: 25px 25px; background-repeat:no-repeat;  background-position:  0 0;}
+.tool-record .icon-tool-record{ background-image:url(../img/plan/toolbar-record-default.png); }
+.tool-record.active .icon-tool-record{ background-image:url(../img/plan/toolbar-record-active.png); }
+.tool-plan .icon-tool-plan{ background-image:url(../img/plan/toolbar-plan-default.png); }
+.tool-plan.active .icon-tool-plan{ background-image:url(../img/plan/toolbar-plan-active.png); }
+.tool-self .icon-tool-self{ background-image:url(../img/plan/toolbar-self-default.png); }
+.tool-self.active .icon-tool-self{ background-image:url(../img/plan/toolbar-self-active.png); }
+
+/* header */
+.navbar{ background-color: #fa82a8; }
+.navbar .sliding{font:normal normal 14px 'micosoft-yahei'; color: #fff;}
+
+/* page-plan */
+/* tab 切换 */
+.page-plan .content-block{padding:0;margin:0;}
+.page-plan .list-block{margin:0;}
+.page-plan h2 { text-align: center;font:normal normal 15px 'micosoft-yahei'; height: 40px; line-height: 40px;margin:0;background-color: #f3f3f3;}
+.page-plan .tabs-plan{ height: auto;}
+.row-plan{ text-align: center;  background-color: #fff; }
+.row-plan .col{ border: 1px solid #d2d2d2; border-left: 0;border-bottom: 0;height: 65px;}
+.row-plan .col .tab-link{ display: block; height: 100%;}
+.row-plan .col .title{margin:0; color: #989b9c; font:normal normal 15px 'micosoft-yahei'; padding:10px 0 0 0;}
+.row-plan .col strong{ font-size: 20px; color: #7f7f7f; position: relative;}
+.row-plan .col strong .badge{width: 10px; height: 10px; }
+.row-plan .col strong .icon{ top: -10px ; right: -6px;}
+.row-plan .active .title, .row-plan .active strong{color: #e7578e;}
+.tabs-plan .tab{background-color: #fff;}
+.tabs-plan .tab .list-block .item-left { position: relative; z-index: 30; background-color: #eaeef0; width: 38px; height: 28px; border-radius: 5px; padding:5px; line-height: 10px; text-align: center;}
+.tabs-plan .tab .list-block .item-left div{font:normal normal 10px 'micosoft-yahei'; color: #7f7f7f; white-space: nowrap;}
+.tabs-plan .tab .list-block .item-left span{font:normal normal 10px 'arial'; color: #7f7f7f;}
+.tabs-plan .tab .list-block .item-title{ overflow: inherit;}
+.tabs-plan .tab .list-block .item-title span{ position: relative; z-index: 10;font:normal normal 15px 'micosoft-yahei'; color: #bfbfbf;}
+.tabs-plan .tab .list-block .item-title span .badge{width: 10px; height: 10px; position: absolute; margin-left: 2px; z-index: 20;}
+.tabs-plan .tab .list-block .item-title div{font:normal normal 10px 'micosoft-yahei';  padding-top: 0px; color: #bfbfbf;}
+.tabs-plan .tab .list-block .item-title.light span{ color: #000;}
+.tabs-plan .tab .list-block .item-title.light div{ color: #7f7f7f;}
+.tabs-plan .tab .list-block .item-title  .unfilish{color: #e6483a;}
+.tabs-plan .tab .item-content{ position: relative; z-index: 10;height: 56px;}
+.tabs-plan .tab .item-line{ width: 1px; height: 100%; background-color: #eaeef0; position: relative; z-index: 20; top: 0; left: 20px;}
+.tabs-plan .tab .list-block .item-inner{ margin-left: 10px; height: 56px; background-position: 90% center;}
+.tabs-plan .tab .list-block .item-inner1{background-image: url(../img/plan/icon-toothbrush.png); background-size: 28px auto;}
+.tabs-plan .tab .list-block .item-inner2{background-image: url(../img/plan/icon-bowl.png); background-size: 33px auto;}
+.tabs-plan .tab .list-block .item-inner3{background-image: url(../img/plan/icon-toothcheck.png); background-size: 30px auto;}
+.tabs-plan .tab .list-block .item-inner4{background-image: url(../img/plan/icon-doctor.png); background-size: 23px auto;}
+/*.tabs-plan .tab .list-block{margin-top: 63px;}*/
+
+
+/* 圆环 */
+.tabs-circle{height: 280px; position: relative;background-color: #f3f3f3;}
+.tabs-circle .box,
+.circle-wrap{ margin: 0 auto; height: 233px;width: 233px; border-radius: 233px;text-align: center; background: #fff;}
+.tabs-circle .progress{display: none; height: 233px; margin: 0 auto;position: relative; text-align: center;}
+.tabs-circle .progress.active{display: block;}
+.tabs-circle .program{ position: absolute; z-index: 100;  top: 45px; left: 50%;margin-left: -71px; width: 143px; height: 143px;border-radius: 143px; background-color: #fff; box-shadow:inset 0px -1px 7px #ddd;}
+.tabs-circle .program-title{font:normal normal 15px 'micosoft-yahei'; color: #7f7f7f;}
+.tabs-circle .program-head{margin-top: 36px;}
+.tabs-circle .program-middle strong{font:normal normal 50px 'arial';}
+.tabs-circle  h3{ margin:0; height: 40px;font:normal normal 15px 'micosoft-yahei'; color: #000; line-height: 40px; padding-left: 20px; background-color: #f3f3f3;position: absolute; bottom: 0;}
+.tabs-circle  h3 span{color: #e7578e;}
+
+
+
+/* login.html */
+.page-common .page-content{ background-color: #fff;}
+.page-common .list-block .item-title.label{font:normal normal 14px 'micosoft-yahei'; color: #7a7066; width: 20%;}
+.page-common .list-block ul:after{background-color: transparent;}
+.page-common .list-block ul:before{background-color: transparent;}
+.page-common .list-block .item-inner:after{background: none;}
+.page-common .list-block .item-inner{border-bottom: 1px solid #e2e2e2;}
+.btn-wrap{ padding:20px 15px;}
+.btn-wrap .btn.bg-pink{background-color: #fa82a8;box-shadow:inset 0px -5px 5px #ee529b; border-radius: 10px;font-family: 'micosoft-yahei'; font-size: 14px;}
+.password-find-wrap{ text-align: center; margin:0;}
+.password-find-wrap a{font-size: 10px;}
+
+/*password-find.html*/
+.page-passwordFind .item-input{  position: relative;}
+.page-passwordFind .get-code{right: -5px;}
+.get-code{ position: absolute; right: 10px; top: 4px; background-color: #ffd5fa; border:1px solid #e552ee;} 
+.get-code.disabled{color: #999;}
+::-webkit-input-placeholder { /* WebKit browsers */
+opacity: 0.2; color: #262626; font-size: 12px;font-family: 'micosoft-yahei'; line-height: 20px; text-align: right;}
+.placeholder-left ::-webkit-input-placeholder{ text-align: left;}
+
+/*info1.html*/
+.page-common h3.title{ font-size: 12px;font-family: 'micosoft-yahei'; color: #b2b2b2; font-weight: normal;margin:0;padding:10px 0 10px 15px; border-bottom: 1px solid #e2e2e2;}
+.page-common .list-block{margin-top: 0;}
+
+/*info2.html*/
+.page-info2 .item-input{background: transparent url(../img/icon-next.png) no-repeat right center;}
+.page-info2 .item-input input{text-align: right; padding-right: 30px;}
+
+/* planDetail.html */
+.page-common1 h3.title{border-bottom: 1px solid #999; color: #000; font-size: 15px; padding-right: 10px;}
+.page-common1 h3.title .fl{ float: left;}
+.page-common1 h3.title .fr{ float: right;}
+.swipeBtn .btn{ position: relative; z-index: 10 ;display: inline-block; width: 40px; height: 20px;border-radius: 15px; background-color: #999;;}
+.swipeBtn .btn .icon-circle{ position: absolute; z-index: 20;right: 20px; top: 4px; display: inline-block; width: 12px; height: 12px; border-radius: 12px; background-color: #fff;}
+.swipeBtn .btn.active{ background-color: #59ae47; }
+.swipeBtn .btn.active  .icon-circle{ right: 5px;}
+.video img{ width: 100%;}
+.page-common1 .list-block .item-title.label{ color: #000;}
+.page-common1 .item-input input{text-align: right; padding-right: 0; color: #3376d2;}
+.pageDetail-detail{ color: #000; font-size: 15px; padding:0 15px;}
+.page-common1 .list-block.btn-close .item-title.label,
+.btn-close .item-input input,
+.btn-close .pageDetail-detail
+{ color: #a8a8a8;}
+
+/* me.html */
+.circle-border-out{ position: absolute; z-index: 10; height: 233px;width: 233px; border-radius: 233px;text-align: center; background: #transparent;border:3px solid #fff; left: 50%;margin-left: -119.5px;top: -2px; }
+.circle-border-in{position: absolute; z-index: 100;  top: 42px; left: 50%;margin-left: -74.5px; width: 143px; height: 143px;border-radius: 143px; background-color: transparent; border:3px solid #fff;}
+.page-me .progress{}
+.page-me h2{ color: #000;}
+.page-me .program-head{margin-top: 10px;}
+.page-me .program{ border:8px solid #f3f3f3; width: 127px; height: 127px;}
+.page-me .program-title span{vertical-align: middle;}
+.page-me .program-middle strong{ font-family: 'sans-serif'; line-height: 55px;}
+.page-me .program-title.blue{ color: #b66afb; font-size: 14px;}
+.page-me .tip{ padding:10px 20px 0;font-size: 12px;font-family: 'micosoft-yahei';}
+.star-wrap{padding: 20px 10px; text-align: center;}
+.star-wrap .col{ border-right:1px solid #d2d2d2;}
+.star-wrap .col:last-child{border:0;}
+.star-wrap .col .title{font:normal normal 15px 'micosoft-yahei'; color: #989b9c;}
+.star-wrap .col span b{font:normal normal 20px 'sans-serif'; line-height: 24px; display: inline-block; margin-right: 5px; vertical-align: middle; }
+.page-set .page-content{ background-color: transparent;}
+.page-set .set-ul-second{ margin-top: 20px;border-top: 1px solid #d2d2d2;}
+.page-set .list-block .item-inner{border-color: #d2d2d2;}
+.page-set .btn-wrap{background-color: #fff;padding-bottom: 10px;}
+.page-set .btn-wrap .btn.bg-pink{background-color: #e7578e; border-radius: 5px;}
+.page-set .list-block .item-title.label{ color: #000; padding-left: 15px; width: 35%}
+.page-set .item-input input{ color: #7f7f7f;}
+.page-set .list-block .item-content{padding-left: 0;}
+#progress-me{display: block;}
+
+/* record.html */
+.tab-title{ text-align: center;}
+.tab-title a{font:normal normal 15px 'micosoft-yahei'; color: #a6a6a6; display: block; padding:5px 0;border-bottom: 2px solid #fff;}
+.tab-title a:first-child{border-right: 1px solid #eaeef0;}
+.tab-title a.active{ color: #e7578e; border-bottom: 2px solid #e7578e;}
+.page-record .tips{ }
+.page-record .tips a{background-color: #a69eaf;color: #fff;display: block; height: 36px; line-height: 36px;font-size: 15px;font-family: 'micosoft-yahei'; text-align: center;}
+
+/* 牙齿位置图 */
+
+.tab-tooth{ width: 235px; height: 140px; margin:0 auto; min-height: 400px;}
+.tab-tooth p{width: 235px; margin:15px auto;}
+
+.tooth-up,
+.tooth-down
+{width: 235px; height: 140px;margin: 20px auto; position: relative; z-index: 10;  }
+
+.tooth-down{width: 219px; height: 114px;}
+
+
+i.icon-tooth{ background-image: url(../img/tooth.png?v=23); position: absolute; z-index: 20;background-size: 500px 500px;}
+.tooth-up p,
+.tooth-down p{padding: 70px 0 0 0; text-align: center; color: #9a9693;font:normal normal 12px 'micosoft-yahei';}
+.tooth-down p{padding-top:35px ;}
+.tooth-up p .center,
+.tooth-down p .center{margin:0 15px;}
+
+/* 上牙 */
+
+/* 未长牙 */
+i.icon-tooth1{ background-position: 0 0;  left: 0;bottom:0;  width: 36px; height: 37px;}
+i.icon-tooth2{ background-position: -50px 0; left: 10px;bottom:35px; width: 38px; height: 38px; }
+i.icon-tooth3{ background-position: -100px 0; left: 27px;bottom:68px; width: 37px; height: 34px; }
+i.icon-tooth4{ background-position: -150px 0; left: 44px;bottom:88px; width: 38px; height: 43px; }
+i.icon-tooth5{ background-position: -200px 0; left: 78px;bottom:100px; width: 40px; height: 46px; }
+i.icon-tooth6{ background-position: -250px 0; left: 119px;bottom:100px; width: 40px; height: 44px; }
+i.icon-tooth7{ background-position: -300px 0; left: 151px;bottom:85px; width: 36px; height: 39px; }
+i.icon-tooth8{ background-position: -350px 0; left: 170px;bottom:65px; width: 37px; height: 32px; }
+i.icon-tooth9{ background-position: -400px 0; left: 186px;bottom:26px; width: 40px; height: 47px; }
+i.icon-tooth10{ background-position: -450px 0; left: 201px;bottom:2px; width: 35px; height: 35px; }
+
+/* 已长牙 */
+.icon-tooth1.show{ background-position: 0 -50px;  left: 0;bottom:0;  width: 36px; height: 37px;}
+.icon-tooth2.show{ background-position: -50px -50px; left: 10px;bottom:35px; width: 38px; height: 38px; }
+.icon-tooth3.show{ background-position: -100px -50px; left: 27px;bottom:68px; width: 37px; height: 34px; }
+.icon-tooth4.show{ background-position: -150px -50px; left: 44px;bottom:88px; width: 38px; height: 43px; }
+.icon-tooth5.show{ background-position: -200px -50px; left: 78px;bottom:100px; width: 40px; height: 46px; }
+.icon-tooth6.show{ background-position: -250px -50px; left: 119px;bottom:100px; width: 40px; height: 44px; }
+.icon-tooth7.show{ background-position: -300px -50px; left: 151px;bottom:85px; width: 36px; height: 39px; }
+.icon-tooth8.show{ background-position: -350px -50px; left: 170px;bottom:65px; width: 37px; height: 32px; }
+.icon-tooth9.show{ background-position: -400px -50px; left: 186px;bottom:26px; width: 40px; height: 47px; }
+.icon-tooth10.show{ background-position: -450px -50px; left: 201px;bottom:2px; width: 35px; height: 35px; }
+
+/* 已长牙选中 */
+.icon-tooth1.showOn{ background-position: 0 -100px;  left: 0;bottom:0;  width: 36px; height: 37px;}
+.icon-tooth2.showOn{ background-position: -50px -100px; left: 10px;bottom:35px; width: 38px; height: 38px; }
+.icon-tooth3.showOn{ background-position: -100px -100px; left: 27px;bottom:68px; width: 37px; height: 34px; }
+.icon-tooth4.showOn{ background-position: -150px -100px; left: 44px;bottom:88px; width: 38px; height: 43px; }
+.icon-tooth5.showOn{ background-position: -200px -100px; left: 78px;bottom:100px; width: 40px; height: 46px; }
+.icon-tooth6.showOn{ background-position: -250px -100px; left: 119px;bottom:100px; width: 40px; height: 44px; }
+.icon-tooth7.showOn{ background-position: -300px -100px; left: 151px;bottom:85px; width: 36px; height: 39px; }
+.icon-tooth8.showOn{ background-position: -350px -100px; left: 170px;bottom:65px; width: 37px; height: 32px; }
+.icon-tooth9.showOn{ background-position: -400px -100px; left: 186px;bottom:26px; width: 40px; height: 47px; }
+.icon-tooth10.showOn{ background-position: -450px -100px; left: 201px;bottom:2px; width: 35px; height: 35px; }
+
+/* 蛀牙 */
+.icon-tooth1.ill{ background-position: 0 -150px;  left: 0;bottom:0;  width: 36px; height: 37px;}
+.icon-tooth2.ill{ background-position: -50px -150px; left: 10px;bottom:35px; width: 38px; height: 38px; }
+.icon-tooth3.ill{ background-position: -100px -150px; left: 27px;bottom:68px; width: 37px; height: 34px; }
+.icon-tooth4.ill{ background-position: -150px -150px; left: 44px;bottom:88px; width: 38px; height: 43px; }
+.icon-tooth5.ill{ background-position: -200px -150px; left: 78px;bottom:100px; width: 40px; height: 46px; }
+.icon-tooth6.ill{ background-position: -250px -150px; left: 119px;bottom:100px; width: 40px; height: 44px; }
+.icon-tooth7.ill{ background-position: -300px -150px; left: 151px;bottom:85px; width: 36px; height: 39px; }
+.icon-tooth8.ill{ background-position: -350px -150px; left: 170px;bottom:65px; width: 37px; height: 32px; }
+.icon-tooth9.ill{ background-position: -400px -150px; left: 186px;bottom:26px; width: 40px; height: 47px; }
+.icon-tooth10.ill{ background-position: -450px -150px; left: 201px;bottom:2px; width: 35px; height: 35px; }
+
+/* 蛀牙选中 */
+.icon-tooth1.illOn{ background-position: 0 -200px;  left: 0;bottom:0;  width: 36px; height: 37px;}
+.icon-tooth2.illOn{ background-position: -50px -200px; left: 10px;bottom:35px; width: 38px; height: 38px; }
+.icon-tooth3.illOn{ background-position: -100px -200px; left: 27px;bottom:68px; width: 37px; height: 34px; }
+.icon-tooth4.illOn{ background-position: -150px -200px; left: 44px;bottom:88px; width: 38px; height: 43px; }
+.icon-tooth5.illOn{ background-position: -200px -200px; left: 78px;bottom:100px; width: 40px; height: 46px; }
+.icon-tooth6.illOn{ background-position: -250px -200px; left: 119px;bottom:100px; width: 40px; height: 44px; }
+.icon-tooth7.illOn{ background-position: -300px -200px; left: 151px;bottom:85px; width: 36px; height: 39px; }
+.icon-tooth8.illOn{ background-position: -350px -200px; left: 170px;bottom:65px; width: 37px; height: 32px; }
+.icon-tooth9.illOn{ background-position: -400px -200px; left: 186px;bottom:26px; width: 40px; height: 47px; }
+.icon-tooth10.illOn{ background-position: -450px -200px; left: 201px;bottom:2px; width: 35px; height: 35px; }
+
+
+/* 下牙 */
+
+/* 未长牙 */
+i.icon-tooth11{ background-position: 0 -250px; left: 0;top:0; width: 32px; height: 37px;}
+i.icon-tooth12{ background-position: -50px -250px; left: 15px;top:34px; width: 34px; height: 34px; }
+i.icon-tooth13{ background-position: -100px -250px; left: 34px;top:63px; width: 31px; height: 33px; }
+i.icon-tooth14{ background-position: -150px -250px; left: 58px;top:81px; width: 26px; height: 32px; }
+i.icon-tooth15{ background-position: -200px -250px; left: 86px;top:84px; width: 25px; height: 33px; }
+i.icon-tooth16{ background-position: -250px -250px; left: 113px;top:82px; width: 24px; height: 33px; }
+i.icon-tooth17{ background-position: -300px -250px; left: 135px;top:75px; width: 28px; height: 32px; }
+i.icon-tooth18{ background-position: -350px -250px; left: 159px;top:60px; width: 31px; height: 38px; }
+i.icon-tooth19{ background-position: -400px -250px; left: 181px;top:34px; width: 36px; height: 37px; }
+i.icon-tooth20{ background-position: -450px -250px; left: 201px;top:2px; width: 32px; height: 37px; }
+
+/* 已长牙 */
+.icon-tooth11.show{ background-position: 0 -300px; left: 0;top:0; width: 32px; height: 37px;}
+.icon-tooth12.show{ background-position: -50px -300px; left: 15px;top:34px; width: 34px; height: 34px; }
+.icon-tooth13.show{ background-position: -100px -300px; left: 34px;top:63px; width: 31px; height: 33px; }
+.icon-tooth14.show{ background-position: -150px -300px; left: 58px;top:81px; width: 26px; height: 32px; }
+.icon-tooth15.show{ background-position: -200px -300px; left: 86px;top:84px; width: 25px; height: 33px; }
+.icon-tooth16.show{ background-position: -250px -300px; left: 113px;top:82px; width: 24px; height: 33px; }
+.icon-tooth17.show{ background-position: -300px -300px; left: 135px;top:75px; width: 28px; height: 32px; }
+.icon-tooth18.show{ background-position: -350px -300px; left: 159px;top:60px; width: 31px; height: 38px; }
+.icon-tooth19.show{ background-position: -400px -300px; left: 181px;top:34px; width: 36px; height: 37px; }
+.icon-tooth20.show{ background-position: -450px -300px; left: 201px;top:2px; width: 32px; height: 37px; }
+
+/* 已长牙选中 */
+.icon-tooth11.showOn{ background-position: 0 -350px; left: 0;top:0; width: 32px; height: 37px;}
+.icon-tooth12.showOn{ background-position: -50px -350px; left: 15px;top:34px; width: 34px; height: 34px; }
+.icon-tooth13.showOn{ background-position: -100px -350px; left: 34px;top:63px; width: 31px; height: 33px; }
+.icon-tooth14.showOn{ background-position: -150px -350px; left: 58px;top:81px; width: 26px; height: 32px; }
+.icon-tooth15.showOn{ background-position: -200px -350px; left: 86px;top:84px; width: 25px; height: 33px; }
+.icon-tooth16.showOn{ background-position: -250px -350px; left: 113px;top:82px; width: 24px; height: 33px; }
+.icon-tooth17.showOn{ background-position: -300px -350px; left: 135px;top:75px; width: 28px; height: 32px; }
+.icon-tooth18.showOn{ background-position: -350px -350px; left: 159px;top:60px; width: 31px; height: 38px; }
+.icon-tooth19.showOn{ background-position: -400px -350px; left: 181px;top:34px; width: 36px; height: 37px; }
+.icon-tooth20.showOn{ background-position: -450px -350px; left: 201px;top:2px; width: 32px; height: 37px; }
+
+/* 蛀牙 */
+.icon-tooth11.ill{ background-position: 0 -400px; left: 0;top:0; width: 32px; height: 37px;}
+.icon-tooth12.ill{ background-position: -50px -400px; left: 15px;top:34px; width: 34px; height: 34px; }
+.icon-tooth13.ill{ background-position: -100px -400px; left: 34px;top:63px; width: 31px; height: 33px; }
+.icon-tooth14.ill{ background-position: -150px -400px; left: 58px;top:81px; width: 26px; height: 32px; }
+.icon-tooth15.ill{ background-position: -200px -400px; left: 86px;top:84px; width: 25px; height: 33px; }
+.icon-tooth16.ill{ background-position: -250px -400px; left: 113px;top:82px; width: 24px; height: 33px; }
+.icon-tooth17.ill{ background-position: -300px -400px; left: 135px;top:75px; width: 28px; height: 32px; }
+.icon-tooth18.ill{ background-position: -350px -400px; left: 159px;top:60px; width: 31px; height: 38px; }
+.icon-tooth19.ill{ background-position: -400px -400px; left: 181px;top:34px; width: 36px; height: 37px; }
+.icon-tooth20.ill{ background-position: -450px -400px; left: 201px;top:2px; width: 32px; height: 37px; }
+
+/* 蛀牙 */
+.icon-tooth11.illOn{ background-position: 0 -450px; left: 0;top:0; width: 32px; height: 37px;}
+.icon-tooth12.illOn{ background-position: -50px -450px; left: 15px;top:34px; width: 34px; height: 34px; }
+.icon-tooth13.illOn{ background-position: -100px -450px; left: 34px;top:63px; width: 31px; height: 33px; }
+.icon-tooth14.illOn{ background-position: -150px -450px; left: 58px;top:81px; width: 26px; height: 32px; }
+.icon-tooth15.illOn{ background-position: -200px -450px; left: 86px;top:84px; width: 25px; height: 33px; }
+.icon-tooth16.illOn{ background-position: -250px -450px; left: 113px;top:82px; width: 24px; height: 33px; }
+.icon-tooth17.illOn{ background-position: -300px -450px; left: 135px;top:75px; width: 28px; height: 32px; }
+.icon-tooth18.illOn{ background-position: -350px -450px; left: 159px;top:60px; width: 31px; height: 38px; }
+.icon-tooth19.illOn{ background-position: -400px -450px; left: 181px;top:34px; width: 36px; height: 37px; }
+.icon-tooth20.illOn{ background-position: -450px -450px; left: 201px;top:2px; width: 32px; height: 37px; }
+
+/* recordDetail.html */
+.list-block li.first .item-content{padding-left: 0; }
+.list-block li.first .item-inner .item-after{background: transparent url(../img/icon-next.png) no-repeat right center; padding-right: 15px;font-size: 12px;}
+.list-block li.first .item-title{padding-left: 15px;}
+.list-block .gray{color: #666;}
+.page-recordDetail .list-block .item-title{font:normal normal 12px 'micosoft-yahei';}
+.page-recordDetail .list-block .item-after img{height: 30px;}
+.page-recordDetail .title{padding:10px 0 0 10px;}
+.page-recordDetail .title .icon{ position: static; float: left; width: 50px;}
+
+/* illDetail.html */
+.page-illDetail .list-block {margin:0;}
+.page-illDetail .list-block .item-head{background-color: #e0dede;padding-left: 0;}
+.page-illDetail .list-block .item-head .item-inner{padding:0 0 0  15px; border-bottom: 1px solid #999; background: none;}
+.page-illDetail .list-block .item-head .item-inner:after{background-color: transparent;}
+.page-illDetail .blue{ color: #3376d2; font-size: 12px;}
+.page-illDetail .list-block li.last .item-content{ padding-left: 0; }
+.page-illDetail .list-block li.last .item-inner{padding-left: 15px;}
+.treat-wrap .button{border:1px solid #d5d5d5; background-color: #fff; color: #7f7f7f; display: inline-block; margin:0 20px 5px 0; font-size: 13px; float: left;}
+.treat-wrap .button.active{ border:1px solid #ee529b; background-color: #ee529b; color: #fff;}
+.ill-add {margin:20px ;}
+.ill-add .button{border:0; color: #fff;}
+.delete{ font-family: 'arial'; font-size: 14px;margin-right: 10px;}

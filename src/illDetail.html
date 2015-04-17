@@ -1,0 +1,179 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i></a></div>
+		<div class="center sliding">记牙齿检查</div>
+		<div class="right">
+			<a href="#" class=" icon-only"> <i class="icon icon-ok"></i></a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="pages">
+	<!-- Page, data-page contains page name-->
+	<div data-page="illDetail" class="page page-recordDetail page-illDetail">
+
+		<!-- Scrollable page content-->
+		<div class="page-content">
+			<div class="list-block accordion-list">
+				<ul id="treat-list">
+					<li class="accordion-item accordion-item-expanded">
+						<a href="#" class="item-content item-link item-head">
+							<div class="item-inner">
+								<div class="item-title">补牙</div>
+								<div class="item-after blue">2014年9月28日</div>
+								<span class="delete">X</span>
+							</div>
+						</a>
+						<div class="accordion-item-content">
+							<div class="list-block">
+								<ul>
+									<!-- Single chekbox item -->
+									<li class="first">
+										<label class="label-checkbox item-content">
+											<div class="item-inner">
+												<div class="item-title">医生</div>
+												<div class="item-after blue">王一多</div>
+											</div>
+										</label>
+									</li>
+									<!-- Single chekbox item -->
+									<li>
+										<label class="label-checkbox item-content">
+											<div class="item-inner">
+												<div class="item-title gray">治疗项目</div>
+											</div>
+										</label>
+									</li>
+									<!-- Single chekbox item -->
+									<li class="last">
+										<div class="item-inner">
+											<div class="item-title treat-wrap">
+												<span class="button button-round active treat treat1">补牙</span>
+												<span class="button button-round treat treat2">拔牙</span>
+												<span class="button button-round treat treat3">根管治疗</span>
+												<span class="button button-round treat treat4">窝沟封闭</span>
+												<span class="button button-round treat treat5">外伤牙处理</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="accordion-item">
+						<a href="#" class="item-content item-link item-head">
+							<div class="item-inner">
+								<div class="item-title">外伤牙处理</div>
+								<div class="item-after blue">2014年9月28日</div>
+								<span class="delete">X</span>
+							</div>
+						</a>
+						<div class="accordion-item-content">
+							<div class="list-block">
+								<ul>
+									<!-- Single chekbox item -->
+									<li class="first">
+										<label class="label-checkbox item-content">
+											<div class="item-inner">
+												<div class="item-title">医生</div>
+												<div class="item-after blue">王一多</div>
+											</div>
+										</label>
+									</li>
+									<!-- Single chekbox item -->
+									<li>
+										<label class="label-checkbox item-content">
+											<div class="item-inner">
+												<div class="item-title gray">治疗项目</div>
+											</div>
+										</label>
+									</li>
+									<!-- Single chekbox item -->
+									<li class="last">
+											
+										<div class="item-inner">
+											<div class="item-title treat-wrap">
+												<span class="button button-round active treat treat1">补牙</span>
+												<span class="button button-round treat treat2">拔牙</span>
+												<span class="button button-round treat treat3">根管治疗</span>
+												<span class="button button-round treat treat4">窝沟封闭</span>
+												<span class="button button-round treat treat5">外伤牙处理</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="ill-add">
+					<span class="button button-full  button-big bg-pink" id="add">添加治疗记录</span>
+				</div>
+			</div>
+			<!-- <div class="list-block">
+				<ul>
+					Single chekbox item
+					<li class="first">
+						<label class="label-checkbox item-content">
+							<div class="item-inner">
+								<div class="item-title">萌出日期</div>
+								<div class="item-after blue">2014年9月28日</div>
+							</div>
+						</label>
+					</li>
+					Single chekbox item
+					<li>
+						<label class="label-checkbox item-content">
+							<div class="item-inner">
+								<div class="item-title gray">健康状态</div>
+							</div>
+						</label>
+					</li>
+					Single chekbox item
+					<li>
+						<label class="label-checkbox item-content">
+							Checked by default
+							<input type="radio" name="my-checkbox" value="Books" checked="checked">
+							<div class="item-media">
+								<i class="icon icon-form-checkbox"></i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">完全健康</div>
+								<div class="item-after"><img src="img/recordDetail/tooth-good.jpg"></div>
+							</div>
+						</label>
+					</li>
+					Another chekbox item
+					<li>
+						<label class="label-checkbox item-content">
+							<input type="radio" name="my-checkbox" value="Movies">
+							<div class="item-media">
+								<i class="icon icon-form-checkbox"></i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">牙釉质发育不良</div>
+								<div class="item-after"><img src="img/recordDetail/tooth-bad.jpg"></div>
+							</div>
+						</label>
+					</li>
+					Another chekbox item
+					<li>
+						<label class="label-checkbox item-content">
+							<input type="radio" name="my-checkbox" value="Movies">
+							<div class="item-media">
+								<i class="icon icon-form-checkbox"></i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">蛀牙</div>
+								<div class="item-after"><img src="img/recordDetail/tooth-worse.jpg"></div>
+							</div>
+						</label>
+					</li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
+</div>

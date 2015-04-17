@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>萌芽</title>
+	<!-- Path to Framework7 Library CSS-->
+	<link rel="stylesheet" href="css/framework7.css">
+	<!-- Path to your custom app styles-->
+	<link rel="stylesheet" href="css/app.css?v=233">
+</head>
+<body>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<!-- Left panel with reveal effect-->
+<div class="panel panel-left panel-reveal">
+	<div class="content-block">
+		<p><a href="login.html?v=12123">登录</a></p>
+	</div>
+</div>
+<!-- Right panel with cover effect-->
+<div class="panel panel-right panel-cover">
+	<div class="content-block">
+		<p>Right panel content goes here</p>
+	</div>
+</div>
+<!-- Views-->
+<div class="views">
+	<!-- Your main view, should have "view-main" class-->
+	<div class="view view-main" id="mainView">
+		<!-- Top Navbar-->
+		<div class="navbar">
+			<div class="navbar-inner">
+				<!-- We have home navbar without left link-->
+				<div class="center sliding">计划</div>
+				<div class="right">
+					<a href="me.html?v=122" id="login">登录</a>
+				</div>
+			</div>
+		</div>
+		<!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+		<div class="pages navbar-through toolbar-through">
+			<!-- Page, data-page contains page name-->
+			<div data-page="index" class="page page-plan">
+				<!-- Scrollable page content-->
+				<div class="page-content">
+	
+					
+					<div class="content-block">
+						<h2>今天2015年3月15日</h2>
+
+						
+						<!-- tabs-circle -->
+						<div class="tabs-circle">
+							
+							<div class="box box1">
+								
+								<div class="progress active" id="progress1">
+									<div class="program">
+										<div class="program-title program-head">天天保健|已完成</div>
+										<div class="program-middle"><strong class="num">1</strong><small class="totle">/5</small></div>
+										<div class="program-title">未完成1项</div>
+									</div>
+								</div>
+								<div class="progress " id="progress2">
+									<div class="program">
+										<div class="program-title program-head">天天保健|已完成</div>
+										<div class="program-middle"><strong class="num">2</strong><small class="totle">/5</small></div>
+										<div class="program-title">未完成1项</div>
+									</div>
+								</div>
+								<div class="progress " id="progress3">
+									<div class="program">
+										<div class="program-title program-head">天天保健|已完成</div>
+										<div class="program-middle"><strong class="num">3</strong><small class="totle">/5</small></div>
+										<div class="program-title">未完成1项</div>
+									</div>
+								</div>
+								<div class="progress " id="progress4">
+									<div class="program">
+										<div class="program-title program-head">天天保健|已完成</div>
+										<div class="program-middle"><strong class="num">4</strong><small class="totle">/5</small></div>
+										<div class="program-title">未完成1项</div>
+									</div>
+								</div>
+							</div>
+							<h3>YOYO爱牙计划 <span>11</span></h3>
+						</div>
+
+
+						<!-- tabs控制面板 -->
+						<div class="row no-gutter row-plan">
+							<div class="col-25 col">
+								<!-- 关联到第一个tab, 默认激活 -->
+								<a href="#tab1" class="tab-link active ">
+									<p class="title">天天保健</p>
+									<strong>1</strong>
+								</a>
+							</div>
+							<div class="col-25 col">
+								<!-- 关联到第二个tab -->
+								<a href="#tab2" class="tab-link ">
+									<p class="title">饮食方案</p>
+									<strong>2<i class="icon"><span class="badge bg-red"></span></i></strong>
+								</a>
+							</div>
+							<div class="col-25 col">
+								<!-- 关联到第三个tab -->
+								<a href="#tab3" class="tab-link ">
+									<p class="title">定期护齿</p>
+									<strong>3</strong>
+								</a>
+							</div>
+							<div class="col-25 col">
+								<!-- 关联到第三个tab -->
+								<a href="#tab4" class="tab-link ">
+									<p class="title">不良习惯</p>
+									<strong>4</strong>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Tabs动画容器, 在动画过渡时需要 -->
+					<div class="tabs-animated-wrap">
+						<!-- Tabs, 标签内容区容器 -->
+						<div class="tabs tabs-plan">
+							<!-- Tab 1, 默认激活 -->
+							<div id="tab1" class="tab tab-health active">
+								<div class="content-block">
+									<div class="list-block">
+										<ul>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>今天</div>
+															<span>7:30</span>
+														</div>
+														<div class="item-inner item-inner1"> 
+															<div class="item-title"><span>早上起床刷牙</span><div class="unfilish">未完成</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>今天</div>
+															<span>11:30</span>
+														</div>
+														<div class="item-inner item-inner2"> 
+															<div class="item-title"><span>吃饭</span><div>已完成</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>明天</div>
+															<span>14:30</span>
+														</div>
+														<div class="item-inner item-inner3"> 
+															<div class="item-title light"><span class="icon">牙齿检查<i class="badge bg-red"></i></span><div>提醒一次</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>明天</div>
+															<span>16:30</span>
+														</div>
+														<div class="item-inner item-inner4 "> 
+															<div class="item-title light"><span>看牙医</span><div>病症:牙齿蛀虫</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Tab 2 -->
+							<div id="tab2" class="tab tab-eat">
+								<div class="content-block">
+									<div class="list-block">
+										<ul>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>今天</div>
+															<span>7:30</span>
+														</div>
+														<div class="item-inner item-inner1"> 
+															<div class="item-title"><span>早上起床刷牙</span><div class="unfilish">未完成</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>今天</div>
+															<span>11:30</span>
+														</div>
+														<div class="item-inner item-inner2"> 
+															<div class="item-title"><span>吃饭</span><div>已完成</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Tab 3 -->
+							<div id="tab3" class="tab tab-protect-tooth">
+								<div class="content-block">
+									<div class="list-block">
+										<ul>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>今天</div>
+															<span>7:30</span>
+														</div>
+														<div class="item-inner item-inner1"> 
+															<div class="item-title"><span>早上起床刷牙</span><div class="unfilish">未完成</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>明天</div>
+															<span>16:30</span>
+														</div>
+														<div class="item-inner item-inner4 "> 
+															<div class="item-title light"><span>看牙医</span><div>病症:牙齿蛀虫</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Tab 3 -->
+							<div id="tab4" class="tab tab-bad-hadit">
+								<div class="content-block">
+									<div class="list-block">
+										<ul>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>明天</div>
+															<span>14:30</span>
+														</div>
+														<div class="item-inner item-inner3"> 
+															<div class="item-title light"><span class="icon">牙齿检查<i class="badge bg-red"></i></span><div>提醒一次</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="planDetail.html" class="item-link ">
+													<div class="item-content">
+														<div class="item-line"></div>
+														<div class="item-left">
+															<div>明天</div>
+															<span>16:30</span>
+														</div>
+														<div class="item-inner item-inner4 "> 
+															<div class="item-title light"><span>看牙医</span><div>病症:牙齿蛀虫</div></div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Bottom Toolbar-->
+		<div class="toolbar tabbar tabbar-labels">
+			<div class="toolbar-inner">
+				<a href="record.html" class="tab-link1 tool-record">
+					<i class="icon icon-tool-record"></i>
+				<span class="tabbar-label">记录</span>
+				</a>
+				<a href="index.html" class="tab-link1 tool-plan active">
+					<i class="icon icon-tool-plan"><span class="badge bg-red"></span></i>
+					<span class="tabbar-label">计划</span>
+				</a>
+				<a href="me.html" class="tab-link1 tool-self ">
+					<i class="icon icon-tool-self"></i>
+					<span class="tabbar-label">我</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script data-main="js/app.js" src="js/libs/require.js"></script>
+<!-- Path to your app js-->
+<!--<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/router.js"></script>-->
+</body>
+</html>
